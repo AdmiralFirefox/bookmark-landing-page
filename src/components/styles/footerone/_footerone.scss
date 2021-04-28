@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+.footerone-wrapper {
+  width: 100%;
+  margin-top: 4em;
+}
+
+.footerone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(231, 69%, 60%);
+
+  div:nth-child(1) {
+    h4 {
+      margin-top: 1.5em;
+      margin-left: 1em;
+      margin-right: 1em;
+      text-align: center;
+      color: #fff;
+      font-size: 1.4rem;
+      font-family: "Rubik", sans-serif;
+    }
+  }
+
+  div:nth-child(2) {
+    h2 {
+      margin-top: 0.5em;
+      margin-left: 1em;
+      margin-right: 1em;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+  }
+
+  div:nth-child(3) {
+    margin-top: 1.8em;
+    width: 80%;
+  }
+}
+
+@media (min-width: 40em) {
+  .footerone-content {
+    height: 20.5em; //Height of footer content desktop
+
+    div:nth-child(2) {
+      width: 30em;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    div:nth-child(3) {
+      width: 100%;
+      max-width: 25em;
+    }
+  }
+}
+
+//Form Validation
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  height: 5em;
+  width: 100%;
+  text-align: left;
+}
+
+.form-validation {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+@media (min-width: 40em) {
+  .form-validation {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .form-inputs {
+    height: 10em;
+  }
+}
+
+//Warning Message
+
+.warning-message {
+  color: #fff;
+  background: hsl(0, 94%, 66%);
+  margin-right: 1em;
+  padding: 0.3em;
+  font-style: italic;
+}
+
+#submit-form-button {
+  margin-top: 3em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+
+// Submit Button
+@media (min-width: 40em) {
+  #submit-form-button {
+    margin: 0;
+    height: 4em;
+  }
+}

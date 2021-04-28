@@ -1,0 +1,32 @@
+.accordion-wrapper {
+  width: 100%;
+  margin-top: 3.5em;
+}
+
+.accordion-position {
+  display: flex;
+  justify-content: center;
+}
+
+.accordion-content {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+}
+
+@media (min-width: 40em) {
+  .accordion-content {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    max-width: 42em;
+  }
+}
+
+//Accordion Button
+
+.accordion-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}

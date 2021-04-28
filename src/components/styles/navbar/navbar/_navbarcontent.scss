@@ -1,0 +1,128 @@
+.back-drop {
+  /* You can set the color with or none */
+  background: rgba(0, 0, 0, 0.253);
+  position: fixed;
+  height: 100%; /* The backdrop shadow when the sidebar is active*/
+  width: 100%;
+  transition: all 0.45s ease-in-out;
+  z-index: 100;
+}
+
+//Note: If this is hard to configure, copy the wrapper and content code from responsive sidebar
+.navbar-wrapper {
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  transition: all 0.45s ease-in-out; /* Animation of sidebar in and out */
+}
+
+.navbar-content {
+  background: hsla(229, 31%, 21%, 0.85); /* Background color of the sidebar */
+  position: fixed;
+  width: 100%; /* How long your sidebar you want */
+  top: 0;
+  height: 100vh;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav_components {
+  display: flex;
+  justify-content: center; /* For Nav Links excluding the dropdowns */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4em;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Determines the position of your nav links */
+    align-items: center;
+    line-height: 4rem;
+    transition: color 0.6s ease;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    border-top: 3px solid #fff;
+  }
+
+  a:nth-child(3) {
+    border-bottom: 3px solid #fff;
+  }
+
+  a:hover {
+    color: hsl(0, 94%, 66%);
+  }
+}
+
+/* Button */
+
+.mobile_button_wrapper {
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4em;
+
+  a {
+    border-top: none;
+  }
+
+  a:hover {
+    background: none;
+  }
+}
+
+#mobile_button {
+  background: none;
+  border: 3px solid #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3em;
+  border-radius: 10px;
+  transition: color 0.6s ease;
+  /* Adjust the with of the button */
+  width: 60vw;
+  margin-bottom: 1.3em;
+  color: #fff;
+
+  &:focus,
+  &:hover {
+    outline: none !important;
+    color: hsl(0, 94%, 66%);
+  }
+}
+
+.navbar-social-links {
+  display: flex;
+  justify-content: center;
+
+  div {
+    margin-bottom: 1.5em;
+
+    a {
+      color: #fff;
+      transition: color .4s ease-in-out;
+    }
+
+    a:hover {
+      color: hsl(0, 94%, 66%);
+    }
+  }
+
+  div > * {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  div:nth-child(1) {
+    margin-right: 1em;
+  }
+}

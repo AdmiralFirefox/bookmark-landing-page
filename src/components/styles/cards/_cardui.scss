@@ -1,0 +1,40 @@
+.card-ui-wrapper {
+  width: 100%;
+}
+
+#card-ui-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: none;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+  padding: 2.5em;
+
+  div:nth-child(1) {
+    margin-bottom: 2em;
+  }
+  div:nth-child(2) {
+    margin-bottom: 2em;
+
+    h2 {
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      color: hsl(229, 8%, 60%);
+    }
+  }
+}
+
+@media (min-width: 45em) {
+  #card-ui-content {
+    div:nth-child(1) {
+      margin-bottom: -0.5em;
+    }
+    div:nth-child(2) {
+      margin-bottom: -1em;
+    }
+  }
+}

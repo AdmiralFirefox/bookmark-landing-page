@@ -1,0 +1,60 @@
+/* Style the dropdown section */
+.dropdown__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Style the buttons that are used to open and close the dropdown panel */
+.dropdown {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* The space between the title and the icon*/
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease; /* The animation must be the same in nav_components a*/
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  &:hover,
+  &.active {
+    background-color: #555; /* The hover section for the dropdown*/
+    color: white;
+  }
+}
+
+/* Style the dropdown content title */
+.dropdown__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  user-select: none;
+}
+
+/* Style the dropdown chevron icon */
+.dropdown__icon {
+  transition: transform 1s ease; /* How long the animation of the arrow */
+  font-size: 1.5rem; /* Size of the arrow */
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(-180deg); /* Direction of rotation of the arrow */
+  color: white;
+}
+
+/* Style the dropdown content panel. Note: hidden by default */
+.dropdown__content {
+  background-color: orange;
+  overflow: hidden;
+  transition: max-height 0.6s ease; /* How long the animation of toggling the dropdown */
+}
+
+/* Style the dropdown content text */
+.dropdown__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}

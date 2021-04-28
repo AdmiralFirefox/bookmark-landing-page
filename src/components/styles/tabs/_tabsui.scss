@@ -1,0 +1,158 @@
+.tab-ui-wrapper {
+  width: 100%;
+}
+
+.tab-ui-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 42em; //height of Tab Content Mobile
+
+  div:nth-child(1) img {
+    width: 65vw;
+    max-width: 25em;
+    margin-top: 1em;
+  }
+
+  div:nth-child(2) {
+    margin-top: 7em;
+    h2 {
+      margin: 0.9em 0.7em;
+    }
+
+    p {
+      margin: 0 1.5em;
+      padding-bottom: 1.2em;
+    }
+  }
+}
+
+@media (min-width: 43.8em) {
+  .tab-ui-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    height: 30em; //height of Tab Content Desktop
+
+    div:nth-child(1) img {
+      width: 38vw;
+      max-width: 30em;
+      margin-top: 0;
+    }
+
+    div:nth-child(2) {
+      width: 25%;
+      margin-top: 0;
+
+      h2 {
+        margin: 0;
+        padding-bottom: 0.8em;
+      }
+
+      p {
+        margin: 0;
+        padding-bottom: 1.2em;
+      }
+    }
+  }
+}
+
+//Tablet Pattern for tabs
+
+.tabs-ui-tablet-mobile {
+  width: 70vw;
+  height: 40vw;
+  position: absolute;
+  top: 63em;
+  left: 0;
+  z-index: -1;
+  background: hsl(231, 69%, 60%);
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+}
+
+@media (min-width: 20em) {
+  .tabs-ui-tablet-mobile {
+    width: 70vw;
+    height: 44vw;
+    position: absolute;
+    top: 60em;
+    left: 0;
+    z-index: -1;
+    background: hsl(231, 69%, 60%);
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+}
+
+@media (min-width: 30em) {
+  .tabs-ui-tablet-mobile {
+    width: 70vw;
+    height: 37vw;
+    position: absolute;
+    top: 64em;
+    left: 0;
+    z-index: -1;
+    background: hsl(231, 69%, 60%);
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+}
+
+@media (min-width: 35em) {
+  .tabs-ui-tablet-mobile {
+    width: 70vw;
+    height: 38vw;
+    position: absolute;
+    top: 66em;
+    left: 0;
+    z-index: -1;
+    background: hsl(231, 69%, 60%);
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+}
+
+@media (min-width: 40em) {
+  .tabs-ui-tablet-mobile {
+    width: 70vw;
+    height: 35vw;
+    position: absolute;
+    top: 56em;
+    left: 0;
+    z-index: -1;
+    background: hsl(231, 69%, 60%);
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+}
+
+@media (min-width: 42em) {
+  .tabs-ui-tablet-mobile {
+    width: 70vw;
+    height: 37vw;
+    position: absolute;
+    top: 54em;
+    left: 0;
+    z-index: -1;
+    background: hsl(231, 69%, 60%);
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+}
+
+@media (min-width: 43em) {
+  .tabs-ui-tablet {
+    width: 32vw;
+    height: 24vw;
+    position: absolute;
+    top: 52.5em;
+    left: 0;
+    z-index: -1;
+    background: hsl(231, 69%, 60%);
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+  }
+}

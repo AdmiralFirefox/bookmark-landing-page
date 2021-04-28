@@ -1,0 +1,34 @@
+.frequently-wrapper {
+  width: 100%;
+  margin-top: 4em;
+}
+
+.frequently-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frequently-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 1.5em;
+
+  div:nth-child(1) {
+    margin-bottom: 1.3em;
+  }
+
+  div:nth-child(2) p {
+    line-height: 1.6em;
+    color: hsl(229, 8%, 60%);
+  }
+}
+
+@media (min-width: 45em) {
+  .frequently-content {
+    width: 28em;
+    margin: 0;
+  }
+}

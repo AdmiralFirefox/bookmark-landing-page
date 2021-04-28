@@ -1,0 +1,162 @@
+/* Mobile View */
+
+.app-bar {
+  position: fixed; //Either Fixed or Relative
+  width: 100%;
+  z-index: 102;
+  /* Change the background of the app-bar */
+  background: hsl(231, 69%, 60%);
+}
+
+.app-bar-active {
+  position: fixed; //Either Fixed or Relative
+  width: 100%;
+  z-index: 102;
+  /* Change the background of the app-bar */
+  background: transparent;
+}
+
+.app-bar-content {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+
+  /* Web Title*/
+
+  img {
+    margin-left: 0.7em;
+  }
+}
+
+.app-bar-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hamburger Icon */
+
+.nav_ham {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0.1em;
+  position: relative;
+  z-index: 102;
+
+  &:hover {
+    color: hsl(0, 94%, 66%);
+  }
+}
+
+/* Desktop View  */
+
+.app-bar-desktop-wrapper {
+  position: absolute; //Either Fixed or Relative
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; //Space Between the Company Name and Navlinks
+  //Change App Bar background for desktop
+  background: none;
+  padding: 0.5em;
+  transition: background 0.4s ease-in-out;
+  margin-top: 1.7em;
+}
+
+.app-bar-desktop-wrapper-active {
+  position: fixed; //Either Fixed or Relative
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; //Space Between the Company Name and Navlinks
+  //Change App Bar background for desktop
+  background: hsl(231, 69%, 60%);
+  transition: background 0.4s ease-in-out;
+  padding: 0.5em;
+}
+
+.desktop-web-name {
+  margin-left: 3.4em;
+  transition: margin 0.4s ease-in-out;
+}
+
+.desktop-web-name-active {
+  margin-left: 1em;
+  transition: margin 0.4s ease-in-out;
+}
+
+.desktop-navlinks {
+  display: flex;
+  align-items: center;
+  margin-right: 3.4em;
+  transition: margin 0.4s ease-in-out;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+  }
+
+  a:hover {
+    color: hsl(0, 94%, 66%);
+  }
+
+  div {
+    margin-right: 1em; //Space Between Navlinks
+  }
+}
+
+.desktop-navlinks-active {
+  display: flex;
+  align-items: center;
+  margin-right: 0.4em;
+  transition: margin 0.4s ease-in-out;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+  }
+
+  a:hover {
+    color: hsl(0, 94%, 66%);
+  }
+
+  div {
+    margin-right: 1em; //Space Between Navlinks
+  }
+}
+
+#desktop-button {
+  border-radius: 0;
+  border: 3px solid hsl(0, 94%, 66%);
+  background: hsl(0, 94%, 66%);
+  color: #fff;
+  border-radius: none;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background: #fff;
+    color: hsl(0, 94%, 66%);
+  }
+}
+
+#desktop-button-active {
+  border-radius: 0;
+  border: 3px solid hsl(0, 94%, 66%);
+  background: hsl(0, 94%, 66%);
+  color: #fff;
+  border-radius: none;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background: #EF2D56;
+    border: 3px solid #EF2D56;
+    color: #fff;
+  }
+}

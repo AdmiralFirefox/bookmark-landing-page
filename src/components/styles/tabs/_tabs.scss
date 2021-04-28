@@ -1,0 +1,17 @@
+.tab-wrapper {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.tab-position {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  width: 100%; //Width of Tab in Desktop View
+}
+
+//Desktop Tab Content

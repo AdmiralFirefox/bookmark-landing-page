@@ -1,0 +1,75 @@
+@import "components/styles/navbar/navbar/navbar";
+@import "components/styles/navbar/navbar/navbarcontent";
+@import "components/styles/navbar/dropdown/dropdown";
+@import "components/styles/navbar/dropdown/desktopdropdown";
+@import "components/styles/main/main";
+@import "components/styles/features/features";
+@import "components/styles/tabs/tabs";
+@import "components/styles/tabs/tabsui";
+@import "components/styles/download/download";
+@import "components/styles/cards/card";
+@import "components/styles/cards/cardui";
+@import "components/styles/frequently/frequently";
+@import "components/styles/accordion/accordion";
+@import "components/styles/footerone/footerone";
+@import "components/styles/footertwo/footertwo";
+
+.content-position {
+  position: absolute;
+  width: 100%;
+  top: 7em;
+}
+
+//For arrow up
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 0.2em;
+  right: 0.3em;
+  font-size: 2.2rem;
+  display: block;
+  color: hsl(0, 94%, 66%);
+  transition: color 0.4s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #ef2d56;
+  }
+}
+
+.no-scroll-to-top {
+  position: fixed;
+  bottom: 0.3em;
+  right: 0.5em;
+  font-size: 2.7rem;
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .scroll-to-top {
+    font-size: 2.7rem;
+    bottom: 0.75em;
+    right: 0.35em;
+  }
+}
+
+//Scrollbar
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: hsl(229, 31%, 21%);
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(229, 31%, 21%);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(229, 8%, 60%);
+  border-radius: 15px;
+}
+
+#testtest:active {
+  color: "orangered";
+}
